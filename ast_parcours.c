@@ -12,6 +12,9 @@ void aff_operateur(TypeOperateur op){
 		case N_MUL:
 			printf("*") ;
 			break;
+		case N_DIV:
+			printf("/") ;
+			break;
 	} 
 }
 

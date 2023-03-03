@@ -12,4 +12,7 @@ Ast creer_valeur(int val) ;
 // renvoie un arbre abstrait "feuille", de nature OPERATION  
 // et de valeur val
 
+void destroy_Tree(Ast T);
+//libère la mémoire allouée au cours de la construction de l'arbre abstrait de l'expression arithmétique
+
 #endif

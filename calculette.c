@@ -1,8 +1,8 @@
 #include "analyse_syntaxique.h"
-// #include "ast_construction.h"
+#include "ast_construction.h"
 #include "ast_parcours.h"
 #include <stdlib.h>
-
+ 
 
 
 
@@ -19,14 +19,15 @@ int main(int argc,char**argv) {
 
         int err=analyser(argv[1],&A);
         if(err==1){
-            printf("Cannot give value due to error in your expression \n");
+            printf("Cannot evaluate expression due to syntactic error !! \n");
             return 0;
         }
+
         AfficherAST(A);
         int value=evaluation(A);
         printf(" = %d \n",value);
-    
-
+         
+        destroy_Tree(A);
       
         
        
